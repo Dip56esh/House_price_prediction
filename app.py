@@ -16,10 +16,10 @@ st.write("Enter the details below to predict the house price:")
 # Input fields for user
 median_income = st.number_input("Median Income (in $10,000s)", min_value=0.0, step=0.1)
 house_age = st.number_input("House Age (in years)", min_value=0.0, step=0.1)
-avg_rooms = st.number_input("Number of  Rooms per Household", min_value=0.0, step=0.1)
-avg_bedrooms = st.number_input("Number of  Bedrooms per Household", min_value=0.0, step=0.1)
-population = st.number_input("Population in Block", min_value=0.0, step=1.0)
-households = st.number_input("Households in Block", min_value=0.0, step=1.0)
+avg_rooms = st.number_input("Number of  Rooms per Household", min_value=0, step=1)
+avg_bedrooms = st.number_input("Number of  Bedrooms per Household", min_value=0, step=1)
+population = st.number_input("Population in Block", min_value=0, step=1)
+households = st.number_input("Households in Block", min_value=0, step=1)
 
 area = st.selectbox("Select Area", ["Bay Area", "Los Angeles", "San Diego", "Sacramento", "Fresno", "San Jose", "Orange County", "Riverside", "San Francisco", "Oakland"])
 
